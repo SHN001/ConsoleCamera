@@ -46,7 +46,7 @@ int main()
 				cv::drawChessboardCorners(gray_img, patternsize, cv::Mat(corners), found);
 				imshow("gray image", gray_img);
 				ostringstream name;
-				name << "testImg_" << count << ".bmp";
+				name << "chessboard_" << count << ".bmp";
 				count++;
 				if (imwrite(name.str(), frame1))
 					cout << "chess board found and save the raw image, press any key to continue" << endl;
